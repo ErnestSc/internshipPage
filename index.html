@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/papillon_icon.png">
+    <title>Papillon Media - Strona Główna</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="top">
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/papillon_media_logo.webp" style="height:1.1em; margin-right:3px;">
+                Papillon Media
+            </div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Otwórz menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="#top">Strona Główna</a></li>
+                    <li><a href="#anchoruslugi">Usługi</a></li>
+                    <li><a href="#realizacje">Nasze media</a></li>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <canvas id="cursor-bubbles" class="cursor-bubbles" aria-hidden="true"></canvas>
+        <div class="particles-bg"></div>
+        <div class="container">
+            <h1 id="hero-title">Papillon Media</h1>
+            <p class="slogan" id="hero-slogan">Tworzymy strony, które sprzedają. Marketing, który działa.</p>
+             <a href="#anchoruslugi" class="cta-button">Sprawdź naszą ofertę!</a>
+        </div>
+    </section>
+
+    <section id="uslugi" class="services">
+        <div class="container">
+            <h2>Nasze Usługi</h2>
+            <div id="anchoruslugi" style="position: relative; top: -100px;"></div>
+            <div class="tiles-grid">
+                <div class="tile" data-service="Strony Internetowe">
+                    <div class="tile-content">
+                        <h3>Strony Internetowe</h3>
+                        <p>Projektujemy strony internetowe pod kątem estetycznym i generującym zyski.</p>
+                    </div>
+                    <div class="tile-overlay">
+                        <h3>Strony Internetowe</h3>
+                        <p>✓ Responsywny design<br>✓ Optymalizacja SEO<br>✓ Szybkie ładowanie</p>
+                        <button class="tile-button">Dowiedz się więcej</button>
+                    </div>
+                </div>
+                <div class="tile" data-service="Sklepy Internetowe">
+                    <div class="tile-content">
+                        <h3>Sklepy Internetowe</h3>
+                        <p>Stworzymy sklep zarówno pod kątem wizualnym jak i funkcjonalnym.</p>
+                    </div>
+                    <div class="tile-overlay">
+                        <h3>Sklepy Internetowe</h3>
+                        <p>✓ Integracja płatności<br>✓ Zarządzanie produktami<br>✓ Analityka sprzedaży</p>
+                        <button class="tile-button">Dowiedz się więcej</button>
+                    </div>
+                </div>
+                <div class="tile" data-service="Aplikacje WEB">
+                    <div class="tile-content">
+                        <h3>Aplikacje WEB & mobile</h3>
+                        <p>Kompleksowe rzowiązania dla firm - aplikacje WEB, mobile i programy dedykowane.</p>
+                    </div>
+                    <div class="tile-overlay">
+                        <h3>Aplikacje WEB & mobile</h3>
+                        <p>✓ Aplikacje webowe<br>✓ Aplikacje mobilne<br>✓ Systemy dedykowane</p>
+                        <button class="tile-button">Dowiedz się więcej</button>
+                    </div>
+                </div>
+                <div class="tile" data-service="Social Media">
+                    <div class="tile-content">
+                        <h3>Social Media​​</h3>
+                        <p>Uzyskamy dla Twojej marki większe zaangażowanie obecnych obserwatorów i pozyskamy nowych odbiorców.</p>
+                    </div>
+                    <div class="tile-overlay">
+                        <h3>Social Media​​</h3>
+                        <p>✓ Zarządzanie profilami<br>✓ Tworzenie treści<br>✓ Analiza zaangażowania</p>
+                        <button class="tile-button">Dowiedz się więcej</button>
+                    </div>
+                </div>
+                <div class="tile" data-service="Reklama">
+                    <div class="tile-content">
+                        <h3>Reklama w Sieci</h3>
+                        <p>Szybkie wdrożenie reklamy w Google, natychmiastowa widoczność, rozliczenie za kliknięcia! Pełna mierzalność działań i opieka dedykowanego specjalisty.</p>
+                    </div>
+                    <div class="tile-overlay">
+                        <h3>Reklama w Sieci</h3>
+                        <p>✓ Google Ads<br>✓ Facebook/Instagram<br>✓ Analiza wyników</p>
+                        <button class="tile-button">Dowiedz się więcej</button>
+                    </div>
+                </div>
+                <div class="tile" data-service="SEO">
+                    <div class="tile-content">
+                        <h3>SEO & Optymalizacja strony</h3>
+                        <p>Profesjonalne doradztwo w zakresie technologii i marketingu.</p>
+                    </div>
+                    <div class="tile-overlay">
+                        <h3>SEO & Optymalizacja strony</h3>
+                        <p>✓ Analiza słów kluczowych<br>✓ Optymalizacja treści<br>✓ Link building</p>
+                        <button class="tile-button">Dowiedz się więcej</button>
+                    </div>
+                </div>
+                <div class="tile" data-service="Strategia">
+                    <div class="tile-content">
+                        <h3>Strategia Marketingowa i Wizerunkowa</h3>
+                        <p>Profesjonalne doradztwo w zakresie technologii i marketingu.</p>
+                    </div>
+                    <div class="tile-overlay">
+                        <h3>Strategia Marketingowa i Wizerunkowa</h3>
+                        <p>✓ Audyt marki<br>✓ Strategia komunikacji<br>✓ Plan działań</p>
+                        <button class="tile-button">Dowiedz się więcej</button>
+                    </div>
+                </div>
+                <div class="tile" data-service="ePR">
+                    <div class="tile-content">
+                        <h3>ePR</h3>
+                        <p>Kształtowanie stosunków firmy z otoczeniem przy wykorzystaniu narzędzi dostępnych w sieci.</p>
+                    </div>
+                    <div class="tile-overlay">
+                        <h3>ePR</h3>
+                        <p>✓ Komunikaty prasowe<br>✓ Relacje z mediami<br>✓ Zarządzanie kryzysowe</p>
+                        <button class="tile-button">Dowiedz się więcej</button>
+                    </div>
+                </div>
+                <div class="tile" data-service="Grafika i Wideo">
+                    <div class="tile-content">
+                        <h3>Grafika & Wideo</h3>
+                        <p>Profesjonalne doradztwo w zakresie technologii i marketingu.</p>
+                    </div>
+                    <div class="tile-overlay">
+                        <h3>Grafika & Wideo</h3>
+                        <p>✓ Projektowanie graficzne<br>✓ Produkcja wideo<br>✓ Animacje i motion</p>
+                        <button class="tile-button">Dowiedz się więcej</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-columns">
+            <!-- Kolumna 1: Informacje -->
+            <div class="footer-col">
+                
+                <p><img src="images/papillon_media_logo.webp" style="height:1.1em; margin-right:3px;"><strong>Papillon Media</strong></p>
+                <p>Ewelina Jurczyńska</p>
+                <p>Nierada, ul. Targowa 210</p>
+                <p>42-262 Poczesna, powiat częstochowski</p>
+                <p>tel: <a href="tel:+48888032296">+48 888 032 296</a></p>
+                <p>email: <a href="mailto:kontakt@papillonmedia.pl">kontakt@papillonmedia.pl</a></p>
+            </div>
+
+            <!-- Kolumna 2: Facebook -->
+            <div class="footer-col">
+                <a href="https://www.facebook.com/papillonmediapl" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook-icon.svg" alt="Facebook" class="social-icon">
+                </a>
+            </div>
+
+            <!-- Kolumna 3: LinkedIn -->
+            <div class="footer-col">
+                <a href="https://www.linkedin.com/company/papillonmediapl/" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
